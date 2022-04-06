@@ -1,0 +1,63 @@
+#me{width: 96.5%;height: 66rem;border: 0px solid black;background-color: #f2f2f2;overflow: hidden;overflow-y: auto;}
+.me_top{width: 100%;height: 20rem;background: #363A9D;overflow: hidden;}
+.me_p{width: 10rem;height: 10rem;background-color: #fff;border-radius: 50%;opacity: 0.1;
+    position: relative;top: -30px;left: -10px;}
+.me_p1{width: 5rem;height: 5rem;border-radius: 50%;background-color: #fff;opacity: 0.2;
+    position: relative;right: -360px;}
+.me_p2{width: 2rem;height: 2rem;border-radius: 50%;background-color: #fff;opacity: 0.2;
+    position: relative;right: -320px;}
+.me_box .pic{width: 8rem;height: 8rem; border-radius: 50%;border: 0px solid black;overflow: hidden;}
+.me_box .pic img{width: 8rem;height: 8rem;border-radius: 50%;}
+.me_box{border: 0px solid black;width: 15rem;height: 8rem;position: absolute;
+    top: 7rem;left: 3rem;}
+.me_box_text{position: absolute;top: 2.6rem;left: 9rem;color: #fff;}
+.news{width: 4rem;height: 4rem;background: url(../img/消息.png);position: absolute;background-size: 100% 100%;
+    top: 4rem; right: 1rem;}
+.me-VIP{width: 90%;height: 10rem;border-radius: 10px; background-image: linear-gradient(to right, #fff, #CFAF72);
+    position: absolute;top: 15rem;left: 2rem;}
+.me-VIP .VIP-text{color: #3B1300;font-size: 20px;position: absolute;left: 2rem;top: 2rem;}
+.me-VIP .VIP-texts{color: #3B1300;font-size: 14px;position: absolute;left: 2rem;top: 6rem;}
+.me-VIP button{position: absolute;top: 5rem; left: 25rem;padding: 0.5rem 2rem;border-radius: 20px;outline: none;border: 1px solid #363A9D;background-color: #363A9D;
+    color: #fff;}
+/* 我的订单 */
+.mydingdan{width: 100%;height: 17rem;border-radius: 10px;margin-top: 6rem;}
+.mydingdan ul{width: 100%;height: 14rem;overflow: hidden;border-radius: 10px;background-image: linear-gradient(to right, #fff,aqua );}
+.mydingdan li{font-size: 12px;font-weight: bolder;width: 5.5rem;height: 5rem;border: 0px solid black;
+    text-align: center;float: left;list-style: none;margin: 1rem 0.8rem 0.5rem 1.5rem;}
+.mydingdan li img{width: 3rem;}
+.my_arrow{width: 100%;height: 3rem;position: relative;bottom: 0rem;}
+.my_arrow img{width: 2rem;height: 50%;position: absolute;left: 19rem;transform: rotate(180deg);}
+/* 我的制定 */
+.formulate{width: 97%;height: 21rem;background-color: #fff;border-radius: 10px;position: absolute;top: 45rem;overflow: hidden;}
+.formulate_top{width: 100%;height: 3rem;border: 0px solid black;}
+.formulate_span{float: right;position: absolute;top: 10px;font-size: 14px;color: #999;right:1rem;text-decoration: none;}
+.formulate_top h5{position: absolute;top: 1rem;left: 1rem;}
+.formulate_ul{width: 100%;height: 15rem;border: 0px solid black;}
+.formulate_li{float: left;list-style: none;margin: 0.5rem 0.5rem;
+    width: 12rem;height: 15rem;border-radius: 10px;text-align: center;box-shadow: 1px 2px 3px #ccc ;}
+.formulate_li_img{width: 100%;height: 50%;border-radius:  10px 10px 0 0;}
+.formulate_li_title{font-size: 12px;background: pink;color: #fff;padding: 0 0.5rem;border-radius: 10px;position: relative;top: -8.5rem;left: -3rem;}
+.formulate_li_name{font-size: 16px;font-weight: bolder;position: relative;top: -2.5rem;}
+.formulate_li_text{font-size: 12px;font-weight: bolder;position: relative;top: -1rem;}
+.guanggao{width: 100%;height: 10rem;border: 0px solid black;position: absolute;top: 68rem;}
+.guanggao img{width: 100%;height: 100%;border-radius: 10px;}
+.guanggao1{width: 100%;height: 10rem;border: 0px solid black;position: absolute;top: 79rem;}
+.guanggao1 img{width: 100%;height: 100%;border-radius: 10px;}
+.me_nav{position: absolute;top: 90rem;width: 100%;border: 0px solid black;height: 3rem;left: 0rem;text-align: left;}
+.me_nav .me_navshopping{width: 110%;height: 3rem;border: 0px solid black;position: absolute;left: 0rem;z-index: 10;background-color: #f2f2f2;}
+
+.me_nav .me_navshopping .router-links,.router-link1s{text-decoration: none;font-size: 16px;color: #000;font-weight: bolder;position: relative;left:1rem;}
+.me_nav .me_navshopping .router-link1s img{width: 20px;height: 20px;position: relative;top: 5px;}
+.me_nav .me_navshopping .router-link1s{width: 10rem; position: absolute;left: 35rem;font-size: 14px;color: #ccc;top: -0.5rem;}
+.me_nav1{width: 100%;height: 100rem;border: 0px solid black;text-align: left;position: absolute;top: 3rem;overflow-y: auto;}
+.me_tops{width: 5rem;height: 5rem;border-radius: 50%;border: 0px solid black;position: fixed;left: 34rem;top: 60rem;
+    background: url(../img/置顶\ top\ \(4\).png);background-size: 100% 100%;display: none;}
+
+
+
+
+
+
+
+
+

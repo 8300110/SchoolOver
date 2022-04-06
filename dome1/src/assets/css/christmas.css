@@ -1,0 +1,25 @@
+.christmas{width: 100%;height: 70rem;overflow: hidden;
+    overflow-y: auto;}
+.christmas1{width: 100%;height: 67rem;overflow: hidden;overflow-y: auto;}
+.christmas1 .list1{display: inline-block;width: 17rem;margin-left: 10px; margin-top: 5px; height: 25rem;border: 1px solid #ccc;border-radius: 10px;box-shadow: 1px 4px 5px #ccc ;}    
+.christmas1 .pic{width: 100%;border-radius: 10px 10px 0 0;height: 60%;}
+.christmas1 .box1{width: 100%;height: 40%;background-color: #fff;position: relative;top: -5px;border-radius: 0 0 10px 10px;}
+.christmas1 .name{font-weight: bolder;font-size: 18px;}
+.christmas1 .money{color: red;font-size: 18px;position: relative;top: -5px;}
+.christmas1 .moneys{color: #ccc;text-decoration:line-through;margin-left: 10px;font-size: 16px;position: relative;top: -5px;}
+.christmas1 .biaoqian{border: 1px solid red;width: 5rem;font-size: 16px;text-align: center;color: red;border-radius: 10px;position: relative;top: -10px;}
+.christmas1 .jia{width: 30px;height: 30px;position: absolute;right: 0px;top: 60px;}
+.top{width: 50px;height: 50px;position: absolute;top: 500px;
+    z-index: 10;right: 10px;background: url(../img/置顶\ top.png);background-size: 100% 100%;display: none;}
+
+
+
+
+
+
+
+
+
+
+
+   

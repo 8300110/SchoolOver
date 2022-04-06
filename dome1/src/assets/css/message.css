@@ -1,0 +1,31 @@
+#message{width: 96.5%;height: 90%;border: 1px solid black;text-align: left;background-color: #fff;overflow: hidden;}
+.message_top{width: 100%;height: 6rem;background-color: #363A9D;position: absolute;left: 0px;border-radius: 0 0 50px 50px;top: 0px;}
+.message_img img{width: 100%;height: 30rem;margin-top: 30;}
+.drink{border:1px solid #363A9D;position: relative;left: 12rem;padding: 1rem 6rem;border-radius: 3rem;
+    color: #363A9D;background-color: #fff;display: inline-block;text-decoration: none;}
+.gess{width: 100%;height: 3rem;border: 0px solid black;font-size: 14px;font-weight: bolder;}
+.gess .like{border-left: 5px #363A9D solid;padding: 0 1rem;}
+.gess .huan .F5{width: 3.8rem;height: 2rem;position: relative;top: 4px;animation: F5 3s linear infinite;}
+@keyframes F5{
+    0%{transform: rotate(0);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(0deg);}
+}
+.gess .huan{color: #363A9D;float: right;}
+/* 主内容 */
+.message-ul{width: 100%;height: 29rem;border: 0px solid black;position: absolute;top: 38rem;}
+.message-ul .message_li{width: 12rem;height: 14rem;border: 0px solid black;float: left;margin-left: 10px;margin-bottom: 5px;list-style: none;background-color: #F5F5F5;}
+.message-ul .message_li .message_li_img{width: 100%;height: 60%;}
+.message_li_text{font-size: 14px;font-weight: bolder;}
+.message_li_money{font-size: 14px;color: red;position: relative;top: -2px;}
+.message_li_moneys{font-size: 12px;text-decoration: line-through;color: #ccc;position: relative;top: -2px;}
+.message_li_img1{width: 2.5rem;height: 2.5rem;position: relative;left: 2rem;}
+
+
+
+
+
+
+
+
+

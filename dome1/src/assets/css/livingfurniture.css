@@ -1,0 +1,11 @@
+.livingfurniture{width: 100%;height: 100%;text-align: left;}
+.livingfurniture .list{width: 45%;height: 20rem;border: 1px solid #fff;list-style: none;float: left;margin: 10px 10px 0 5px; border-radius: 5px;}
+.livingfurniture .list .pic{width: 100%;height: 50%;border-radius: 5px 5px 0 0;}
+.livingfurniture .list .box1{width: 94%;height: 50%;background-color: #fff;position: relative;top: -5px;padding: 0 5px;
+    border-radius: 0 0 5px 5px;}
+.livingfurniture .list .name{font-size: 14px;position: relative;}
+.livingfurniture .list .money{font-size: 14px; color: red;}
+.livingfurniture .list .moneys{font-size: 13px;text-decoration:line-through;color: #777;}
+.livingfurniture .list .title{font-size: 12px;background-color: pink;width: 4rem;text-align: center;color: red;border-radius: 5px;margin: 10px 0 5px 0;}
+.livingfurniture .list .shou{font-size: 12px;color: #999;}
+.livingfurniture .list .pic1{width: 20px;height: 20px;float: right;}

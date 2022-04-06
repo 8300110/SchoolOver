@@ -1,0 +1,99 @@
+
+.mounth{width: 96.5%;height: 66rem;border: 1px solid black;background: #EDEDED;overflow-y: auto;overflow-x: hidden;}
+.div{width: 100%;background-color: cornflowerblue;height: 20rem;position: absolute;top: 0;left: 0;}
+.mounth .mounths{width: 96%;height: 18.5rem;border: 0px solid black;overflow: hidden; position: relative;border-radius: 5px;
+    top: 20px;left: 8px;}
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.mounth  .swiper-slide img{width: 100%;height: 100%;border-radius: 5px;}
+.swiper-pagination{position:absolute;z-index: 100;top: 140px;}
+/* 标明 */
+.biaoming{width: 100%;position: relative;top: 200px;list-style: none;}
+.biaoming li{float: left;margin:0 10px;font-size: 16px;}
+.biaoming li img{width: 25px;height: 25px;position: relative;top: 5px;}
+
+.bac img{width: 100%;position: relative;left: -5px;top: 21rem;}
+/* 主要内容 */
+.cotton{width: 96.5%;height: 20rem;background-color: #fff;position: relative;top: 22rem;left: 1rem;border-radius: 10px;}
+.cotton_ul{list-style: none;width: 100%;height: 100%;border-radius: 10px;}
+.cotton_ul .list{width: 6rem;height: 8rem;border: 0px solid black;float: left;margin:  10px 5px 5px 10px;}
+.cotton_ul .pic{width: 100%;height: 60%;display: inline-block;}
+.cotton_ul .text{position: relative;top: 0rem;display: inline-block;font-size: 15px;}
+.text1s{font-size: 14px;color: #fff;display: inline-block;border: 1px solid red;width: 3rem;height: 2rem;text-align: center; border-radius: 10px;background-color: red;
+    animation: text1 .8s linear alternate infinite;position: absolute;top: 0px;}
+@keyframes text1 {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+.text2s{font-size: 14px;color: #fff;display: inline-block;border: 1px solid red;width: 3rem;height: 2rem;text-align: center; border-radius: 10px;background-color: red;
+    animation: text2 1s linear alternate infinite;position: absolute;top: 10rem;left: 8rem;}
+@keyframes text2 {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+/* 低至29.9 */
+.cotton2{width: 96.5%;height: 28rem;background-color: #fff;position: relative;top: 24rem;left: 1rem;border-radius: 10px;}
+.cotton2 ul{width: 100%;height: 100%;list-style: none;margin-left: 10px;}
+.cotton2 ul .cotton2_list{width: 18.05rem;height: 13rem;border: 0px solid black;float: left;margin-top:1rem;margin-right: 1rem;}
+.cotton2 ul .cotton2_list .top{font-size: 16px;font-weight: bolder;}
+.cotton2 ul .cotton2_list .tops{font-size: 14px;padding: 0 5px;border-radius: 10px;
+    color: #fff;background-color: #FB6D93;}
+.cotton2 ul .cotton2_list div{width: 8.5rem;height: 10rem; background-image: linear-gradient(#fff, #FBEFF3);
+    border-radius: 10px;float: left;margin-right: 0.5rem;text-align: center;}
+.cotton2 ul .cotton2_list div img{width: 70%;height: 70%;position: relative;top: 10px;}
+/* 蒙卡潮品  */
+.cotton3{width: 96.5%;height: 21rem;background-color: #FBEFF3;position: relative;top: 26rem;left: 1rem;
+    border-radius: 10px;padding: 10px 2px;text-align: left;}
+.cotton3 .text{font-weight: bolder;}
+.cotton3 .text3{font-size: 16px;font-weight: bolder;}
+.cotton3 .text4{font-size: 14px;color: #fff;background-color: #BA4B26;
+    padding: 1px 5px;border-radius: 20px;font-weight: bolder;}
+    .cotton3 .text5{border: 1px solid black;font-size: 14px;padding: 1px 5px;border-radius: 20px;background-color: #000;
+        color: #fff;font-weight: bolder;position: absolute;top: 20px;right: 20px;animation:  text5 1s linear infinite;}
+@keyframes text5{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+.cotton3_ul{width: 100%;height: 15rem;position: relative;top: 1rem;}
+.cotton3_ul li{display: inline-block;width: 30%;height: 100%;background-color: #fff;border-radius: 10px;margin-left: 5px;}
+.cotton3_ul li img{width: 100%;height: 50%;border-radius: 10px 10px 0 0 ;}
+.cotton3_ul li .li_text{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+    font-size: 16px;display: inline-block;width: 11rem;}
+    .cotton3_ul li .num{color: red;position: relative;left: 0px;}
+    .cotton3_ul li .nums{color: #ccc;position: relative;left: 5px;font-size: 14px;text-decoration: line-through;}
+/* 商品页瀑布流 */
+.commodity{width: 100%;height: 100rem;border: 0px solid black;position: relative;top: 28rem;}
+.commodity-li{-webkit-column-width: 10rem;column-width: 10rem;border: 0px solid black;float: left;width: 19rem;height: 30rem;border-radius: 10px;
+    background-color: #fff;margin-right: 0.75rem;list-style: none;margin-top: 5px;box-shadow: 5px 1px 2px 1px #ccc;text-align: left;}
+.commodity-img{width: 100%;height: 60%;border-radius: 10px 10px 0 0;}
+.commodity-name{width: 80%;display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+    font-size: 16px;font-weight: bolder;}
+.commodity-money{color: red;margin-top: 10px;}
+.commodity-moneys{color: #ccc;position: relative;left: 5px;font-size: 14px;text-decoration: line-through;margin-top: 10px;}
+.commodity-title{font-size: 14px;width: 5rem;text-align: center;color: #fff;background: pink;border-radius: 10px;margin-top: 10px;}
+.commodity-shou{font-size: 15px;color: #000;margin-top: 10px;}
+.commodity-img1{width: 30px;height: 30px;position: relative;left:-5rem;top: 27rem;}
+.top1s{width: 50px;height: 50px;position: absolute;top: 500px;
+    z-index: 10;right: 10px;background: url(../img/置顶\ top\ \(4\).png);background-size: 100% 100%;display: none;}
