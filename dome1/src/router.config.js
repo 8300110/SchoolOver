@@ -38,6 +38,7 @@ import Fashion from "./components/Fashion"
 
 //详情商品
 import Instant from "./components/Instant"
+import Christma from "./components/Christma"
 // 配置路由
 export default {
   routes: [{
@@ -207,6 +208,11 @@ export default {
       path: "/Instant",
       name: 'Instant',
       component: Instant
+    },
+    {
+      path: "/christma",
+      name: "christma",
+      component: Christma
     },
 
   ]
