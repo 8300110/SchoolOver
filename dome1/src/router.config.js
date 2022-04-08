@@ -39,9 +39,17 @@ import Fashion from "./components/Fashion"
 //详情商品
 import Instant from "./components/Instant"
 import Christma from "./components/Christma"
+//登录
+import Login from "./components/Login.vue"
 // 配置路由
 export default {
-  routes: [{
+  routes: [
+    {
+      path: "/",
+      name: "Login",
+      component: Login
+    },
+    {
       path: "/",
       redirect: "/home"
     },

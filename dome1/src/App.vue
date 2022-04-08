@@ -13,7 +13,7 @@
   import HomeView from "./components/Home"
   import FooterView from "./components/Footer"
 export default {
-  name: 'app',
+  name: 'App',
   components:{
    
     HomeView,

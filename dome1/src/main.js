@@ -41,12 +41,19 @@ import $ from 'jquery'
 import ElementUI from 'element-ui';3
 
 import 'element-ui/lib/theme-chalk/index.css';
+
+import './assets/css/theme.css'
+import './assets/css/character.css'
 // import { Button, Select } from 'element-ui';
 Vue.use(ElementUI);
 
+Vue.config.productionTip = false
 new Vue({
   el: '#app',
   // 挂载路由
   router,
-  render: h => h(App)
+  // render: h => h(App),
+  components: { App },
+  template: '<App/>'
+
 })
