@@ -1,43 +1,54 @@
 <template>
-    <div class="digital" id="digital">
-        <ul class="digitals">
-            <li class="list"  v-for="(k,index) in arrList" :key="index">
-                <img :src="k.img" alt="" class="pic">
-                <div class="box1">
-                <p class="name">{{k.name}}</p>
-                <span class="money">{{k.money}}</span><span class="moneys">{{k.moneys}}</span>
-                <p class="title">{{k.title}}</p>
-                <span class="shou">{{k.shou}}</span><img :src="k.img1" alt="" class="pic1">
-                </div>
-            </li>
-           
-        </ul>
-    </div>
+  <div class="digital" id="digital">
+    <ul class="digitals">
+      <li
+        class="list"
+        v-for="(k, index) in arrList"
+        @click="Btn(k.id)"
+        :key="index"
+      >
+        <img :src="k.img" alt="" class="pic" />
+        <div class="box1">
+          <p class="name">{{ k.name }}</p>
+          <span class="money">{{ k.money }}</span
+          ><span class="moneys">{{ k.moneys }}</span>
+          <p class="title">{{ k.title }}</p>
+          <span class="shou">{{ k.shou }}</span
+          ><img :src="k.img1" alt="" class="pic1" />
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 <style>
 @import url("../assets/css/digital.css");
 </style>
 <script>
-import {Test1} from '../request/api.js'
+import { Test1 } from "../request/api.js";
 export default {
-    data(){
-        return{
-            arrList:[]
-        }
+  data() {
+    return {
+      arrList: []
+    };
+  },
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    Btn(id) {
+      this.$router.push({
+        path: "/Instant",
+        query: { Instant: id }
+      });
     },
-     mounted(){
-        this.getData() 
-        },
-      methods:{
-       getData(){
-        var _this=this;
-        Test1().then(function(res){
-            // res就是请求成功之后的数据
-            _this.arrList=res.data.data3
-            console.log(res)
-        })
-       },
-       
-   }
-}
+    getData() {
+      var _this = this;
+      Test1().then(function(res) {
+        // res就是请求成功之后的数据
+        _this.arrList = res.data.data3;
+        console.log(res);
+      });
+    }
+  }
+};
 </script>
