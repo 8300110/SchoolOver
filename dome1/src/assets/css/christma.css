@@ -13,3 +13,27 @@
 .el-carousel__item:nth-child(2n+1) {
   background-color: #d3dce6;
 }
+
+.money{
+  position: relative;
+  text-align: left;
+}
+.btn{
+  position: fixed;
+  bottom: 7rem;
+  right: 10px;
+}
+.input{
+  position: fixed;
+  bottom: 7rem;
+  width: 15rem;
+  left: 0;
+}
+.price{
+  position: fixed;
+  bottom: 7rem;
+  left: 16rem;
+  border: 1px solid #ccc;
+  padding: 7px;
+  border-radius: 5px;
+}

@@ -327,7 +327,7 @@
         {"id":20,"img":"/src/assets/img/420.webp","name":"瑞辛元气弹系列即溶咖啡","money":"￥99","moneys":"￥129","title":"YYDS","shou":"已售卖20900+件","img1":"/src/assets/img/购物车1.png"}
     ],
     "data26":[
-        {"id":1,"img":"/src/assets/img/401.webp","title":"为您推荐","name":"丝绒咖啡","text":"热/不另外加糖"},
+        {"id":1,"img":"/src/assets/img/401.webp","title":"为您推荐","name":"丝绒咖啡","text":"热/不另外加糖","money":"￥99"},
         {"id":2,"img":"/src/assets/img/402.webp","title":"为您推荐","name":"厚乳拿铁","text":"热/不另外加糖/大"},
         {"id":3,"img":"/src/assets/img/403.webp","title":"为您推荐","name":"生椰丝绒拿铁","text":"热/不另外加糖/无奶油"}
     ],
