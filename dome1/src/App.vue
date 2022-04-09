@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  
+  <login></login>
     
    <!-- <HomeView class="home"></HomeView> -->
    <router-view class="home"></router-view>
@@ -9,13 +9,13 @@
 </template>
 
 <script>
-  
+  import Login from "./components/Login"
   import HomeView from "./components/Home"
   import FooterView from "./components/Footer"
 export default {
   name: 'App',
   components:{
-   
+    Login,
     HomeView,
     FooterView
   },
