@@ -45,7 +45,7 @@ import Login from "./components/Login.vue"
 export default {
   routes: [
     {
-      path: "/",
+      path: "/login",
       name: "Login",
       component: Login
     },
@@ -224,4 +224,6 @@ export default {
     },
 
   ]
+  
 }
+
