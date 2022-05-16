@@ -45,40 +45,54 @@ import Login from "./components/Login.vue"
 export default {
   routes: [
     {
-      path: "/login",
+      path: "",
       name: "Login",
-      component: Login
+      redirect:'/login',
+      component: Login,
+      meta:{tabbarshow:false},
     },
-    {
-      path: "/",
-      redirect: "/home"
-    },
+    // {
+    //   path: "/",
+    //   redirect: "/home"
+    // },
     {
       path: "/home",
       component: Home,
+      meta:{tabbarshow:true},
+      // meta: {
+			// 	requireAuth: true
+			// },
+      // meta:{tabbarshow:true},
       children: [{
           path: "",
-          component: Chaopin
+          component: Chaopin,
+          meta:{tabbarshow:true},
+
         },
         {
           path: "chaopin",
-          component: Chaopin
+          component: Chaopin,
+          meta:{tabbarshow:true},
         },
         {
           path: "yanzhi",
-          component: Yanzhi
+          component: Yanzhi,
+          meta:{tabbarshow:true},
         },
         {
           path: "jaju",
-          component: Jaju
+          component: Jaju,
+          meta:{tabbarshow:true},
         },
         {
           path: "chongtiao",
-          component: Chongtiao
+          component: Chongtiao,
+          meta:{tabbarshow:true},
         },
         {
           path: "gengduo",
-          component: Gengduo
+          component: Gengduo,
+          meta:{tabbarshow:true},
         },
 
       ]
@@ -86,123 +100,151 @@ export default {
     {
       path: "/money",
       component: Money,
-      // redirect:"/money/classic/zaocan",
+      meta:{tabbarshow:true},
       children: [{
           path: "",
           component: Classic,
           redirect: "/money/classic/zaocan",
+          
+          meta:{tabbarshow:true},
         },
         {
           path: "classic",
           component: Classic,
           redirect: "/money/classic/zaocan",
+          meta:{tabbarshow:true},
           children: [
             // {path:"",component:Zaocan},
             {
               path: "zaocan",
-              component: Zaocan
+              component: Zaocan,
+              meta:{tabbarshow:true},
             },
             {
               path: "xiading",
-              component: Xiading
+              component: Xiading,
+              meta:{tabbarshow:true},
             },
             {
               path: "nuanka",
-              component: Nuanka
+              component: Nuanka,
+              meta:{tabbarshow:true},
             },
             {
               path: "sirong",
-              component: Sirong
+              component: Sirong,
+              meta:{tabbarshow:true},
             },
             {
               path: "houru",
-              component: Houru
+              component: Houru,
+              meta:{tabbarshow:true},
             },
             {
               path: "shengye",
-              component: Shengye
+              component: Shengye,
+              meta:{tabbarshow:true},
             },
             {
               path: "black",
-              component: Black
+              component: Black,
+              meta:{tabbarshow:true},
             },
             {
               path: "old",
-              component: Old
+              component: Old,
+              meta:{tabbarshow:true},
             },
             {
               path: "bigshi",
-              component: Bigshi
+              component: Bigshi,
+              meta:{tabbarshow:true},
             },
             {
               path: "ice",
-              component: Ice
+              component: Ice,
+              meta:{tabbarshow:true},
             },
             {
               path: "new",
-              component: New
+              component: New,
+              meta:{tabbarshow:true},
             },
             {
               path: "tianpin",
-              component: Tianpin
+              component: Tianpin,
+              meta:{tabbarshow:true},
             },
             {
               path: "foold",
-              component: Foold
+              component: Foold,
+              meta:{tabbarshow:true},
             },
             {
               path: "drink",
-              component: Drink
+              component: Drink,
+              meta:{tabbarshow:true},
             },
             {
               path: "round",
-              component: Round
+              component: Round,
+              meta:{tabbarshow:true},
             },
 
           ]
         },
         {
           path: "christmas",
-          component: Christmas
+          component: Christmas,
+          meta:{tabbarshow:true},
         },
         {
           path: "recom",
-          component: Recom
+          component: Recom,
+          meta:{tabbarshow:true},
         },
       ]
 
     },
     {
       path: "/mounth",
-      component: Mounth
+      component: Mounth,
+      meta:{tabbarshow:true},
     },
     {
       path: "/message",
       component: Message,
+      meta:{tabbarshow:true},
 
     },
     {
       path: "/me",
       component: Me,
+      meta:{tabbarshow:true},
       children: [{
           path: "",
-          component: Afternoon
+          component: Afternoon,
+          meta:{tabbarshow:true},
         },
         {
           path: "afternoon",
-          component: Afternoon
+          component: Afternoon,
+          meta:{tabbarshow:true},
         },
         {
           path: "livingfurniture",
-          component: Livingfurniture
+          component: Livingfurniture,
+          meta:{tabbarshow:true},
         },
         {
           path: "digital",
-          component: Digital
+          component: Digital,
+          meta:{tabbarshow:true},
         },
         {
           path: "fashion",
-          component: Fashion
+          component: Fashion,
+          meta:{tabbarshow:true},
         },
       ]
 
@@ -210,17 +252,20 @@ export default {
     {
       path: "/money",
       component: Nav_left,
+      meta:{tabbarshow:true},
 
     },
     {
       path: "/Instant",
       name: 'Instant',
-      component: Instant
+      component: Instant,
+      meta:{tabbarshow:true},
     },
     {
       path: "/christma",
       name: "christma",
-      component: Christma
+      component: Christma,
+      meta:{tabbarshow:true},
     },
 
   ]

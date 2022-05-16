@@ -1,5 +1,5 @@
 <template>
     <div class="square">
-        广场
+        二维码扫描的效果
     </div>
 </template>

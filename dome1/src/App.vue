@@ -1,10 +1,10 @@
 <template>
   <div id="app">
   <login></login>
-    
+    <!-- v-if="$route.meta.tabbarshow"  -->
    <!-- <HomeView class="home"></HomeView> -->
-   <router-view class="home"></router-view>
-   <FooterView class="footer"></FooterView>
+   <router-view  class="home"></router-view>
+   <FooterView v-if="$route.meta.tabbarshow"  class="footer"></FooterView>
   </div>
 </template>
 

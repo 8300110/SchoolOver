@@ -15,7 +15,10 @@
             </div>
         </div>
         <div class="scanning">
-            <img src="src/assets/img/扫描.png" alt="">
+            <router-link to="/Square">
+                <img src="src/assets/img/扫描.png" alt="">
+            </router-link>
+            
         </div>
         <div class="navs">
            <a href="http://localhost:8080/#/money">

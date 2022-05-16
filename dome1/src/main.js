@@ -39,7 +39,7 @@ const router = new Router(RouterConfig)
 import $ from 'jquery'
 
 import ElementUI from 'element-ui';
-
+// import Router from 'vue-router'
 import 'element-ui/lib/theme-chalk/index.css';
 
 import './assets/css/theme.css'
@@ -48,10 +48,24 @@ import './assets/css/character.css'
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(route => route.meta && route.meta.requiresAuth)) {
+    if (!this.$storage.getStorage("userInfo")) {  // 没有登录信息跳转到登录页
+      next({
+        path: "/login",
+        query: { redirect: to.fullPath }  // 'to.fullPath'跳转到登录之前页面的路径
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
 new Vue({
   el: '#app',
   // 挂载路由
-  router,
+  router:router,
   // render: h => h(App),
   components: { App },
   template: '<App/>'

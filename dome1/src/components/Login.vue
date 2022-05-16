@@ -39,9 +39,11 @@
   background: linear-gradient(to right, #000099, #2154fa); /* 标准的语法 */
   filter: brightness(1.4);
 }
+/* .mu{width: 100%;height: 15rem;position: absolute;background-color: red;z-index: 1000;bottom: 0;} */
 </style>
 <template>
   <div>
+    <div class="mu"></div>
     <div class="outer_label">
       <!-- <img class="inner_label login_logo" src="../../assets/logo.png"> -->
     </div>
@@ -56,6 +58,7 @@
         type="text"
         class="qxs-ic_password qxs-icon"
         placeholder="密码"
+        show-password
         v-model="password"
       />
       <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
@@ -68,8 +71,7 @@
         >登录</el-button
       >
       <div style="margin-top: 10px">
-        <span style="color: #000099;" @click="login">账号登陆</span
-        ><span style="float: right;color: #A9A9AB">忘记密码？</span>
+        
       </div>
     </div>
   </div>
@@ -87,11 +89,11 @@ export default {
   },
   created() {
     if (
-      JSON.parse(localStorage.getItem("user")) &&
-      JSON.parse(localStorage.getItem("user")).userName
+      JSON.parse(sessionStorage.getItem("user")) &&
+      JSON.parse(sessionStorage.getItem("user")).userName
     ) {
-      this.userName = JSON.parse(localStorage.getItem("user")).userName;
-      this.password = JSON.parse(localStorage.getItem("user")).password;
+      this.userName = JSON.parse(sessionStorage.getItem("user")).userName;
+      this.password = JSON.parse(sessionStorage.getItem("user")).password;
     }
   },
   computed: {
