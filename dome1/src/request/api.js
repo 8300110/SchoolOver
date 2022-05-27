@@ -7,3 +7,6 @@ import request from "./request"
 
 // 本地数据
 export const Test1 = (params) => request.get('../data/data1.data',{params});
+
+// import {login} from '@/api/Login.js'
+// export const loginAPI = login

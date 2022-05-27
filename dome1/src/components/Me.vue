@@ -8,7 +8,7 @@
         <p class="pic"><img src="src/assets/img/03.webp" alt="" /></p>
         <span class="me_box_text">
           <router-link to="./Login.vue" class="router">
-            Lin
+            {{name}}
           </router-link>
           </span>
       </div>
@@ -126,7 +126,8 @@ import { Test1 } from "../request/api.js";
 export default {
   data() {
     return {
-      arrList: []
+      arrList: [],
+      name:'admin'
     };
   },
   mounted() {

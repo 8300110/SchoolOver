@@ -46,6 +46,8 @@ import './assets/css/theme.css'
 import './assets/css/character.css'
 // import { Button, Select } from 'element-ui';
 Vue.use(ElementUI);
+// import vueRsource from 'vue-resource'
+// Vue.use(vueRsource);
 
 Vue.config.productionTip = false
 router.beforeEach((to, from, next) => {

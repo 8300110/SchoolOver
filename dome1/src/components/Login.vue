@@ -18,7 +18,7 @@
 .login_logo {
   height: 100%;
 }
-.input{
+.input {
   margin-bottom: 20px;
 }
 .login_btn {
@@ -52,12 +52,12 @@
       <!-- <img class="inner_label login_logo" src="../assets/img/欢迎.jpeg"> -->
     </div>
     <div class="login_form">
+      <el-form :model="user" :rules="rules">
       <el-input
-      type="text"
+        type="text"
         class="input"
         placeholder="请输入用户名"
         v-model="userName"
-        
       >
       </el-input>
       <el-input
@@ -67,6 +67,7 @@
         v-model="password"
         show-password
       ></el-input>
+      </el-form>
       <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
       <el-button
         class="login_btn input"
@@ -86,18 +87,33 @@
 export default {
   data() {
     return {
+      user:{},
+      rules: {
+        // usn和prop对应
+        userName: [
+          // blur表示鼠标失焦时触发
+          { required: true, message: "请输入用户名", trigger: "blur" }
+        ],
+        password: [
+          { required: true, message: "请输入密码", trigger: "blur" },
+          { min: 3, max: 15, message: "长度在 3 到 15 个字符", trigger: "blur" }
+        ]
+      },
+      userNames: ["admin", "test"],
+      passwords: ["admin123", "test123"],
       userName: "",
       password: "",
+      index: 0,
       isBtnLoading: false
     };
   },
   created() {
     if (
-      JSON.parse(sessionStorage.getItem("user")) &&
-      JSON.parse(sessionStorage.getItem("user")).userName
+      JSON.parse(localStorage.getItem("user")) &&
+      JSON.parse(localStorage.getItem("user")).userName
     ) {
-      this.userName = JSON.parse(sessionStorage.getItem("user")).userName;
-      this.password = JSON.parse(sessionStorage.getItem("user")).password;
+      this.userName = JSON.parse(localStorage.getItem("user")).userName;
+      this.password = JSON.parse(localStorage.getItem("user")).password;
     }
   },
   computed: {
@@ -107,30 +123,35 @@ export default {
     }
   },
   methods: {
-     
     login() {
-     
-      if (!this.userName) {
-        this.$message.error("请输入用户名");
-        return;
+      while (this.index != this.userNames.length - 1) {
+        this.index++;
       }
-      if (!this.password) {
-        this.$message.error("请输入密码");
-        return;
-      }
-      const redirect = this.$route.query.redirect;
-
-      if (redirect) {
-        //存在回跳地址就回跳
-
-        this.$router.push(redirect);
-      } else {
-        //否则就跳到默认的首页
-        alert("登陆成功");
-        this.$router.push({
-          // name: "Home",
-          path: "/home"
-        });
+      for (var i = 0; i <= this.index; i++) {
+        if (
+          this.userNames[i] == this.userName &&
+          this.passwords[i] == this.password
+        ) {
+          const redirect = this.$route.query.redirect;
+          if (redirect) {
+            alert("账号或密码错误，请重新输入！！！");
+            this.$route.push({
+              path: "/login"
+            });
+          } else {
+            alert("登陆成功");
+            this.$router.push({
+              // name: "Home",
+              path: "/home"
+            });
+          }
+        } else if (!this.userName) {
+          this.$message.error("请输入用户名");
+          return;
+        } else if (!this.password) {
+          this.$message.error("请输入密码");
+          return;
+        }
       }
     }
   }
